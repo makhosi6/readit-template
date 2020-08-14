@@ -1,9 +1,10 @@
  
- let arr = [12,342,34,445,5,6,7,787,8,89,99,9,9098,6,56,5,5,23,23,5,5];
- let indexWrapper = document.querySelector('div.body-wrapper');
+ let arr = [12,342,34,445,5,6,7,787,8,89,99,9,90,298,6,56,5,5,23,23,5,5,3,4,35,2,24];
+ let el = document.querySelector('div.body-wrapper');
+ 
 
 
- function content(el){
+(()=>{
      arr.map((o)=>{
         if (window.location.pathname === "/index.html") {
             el.innerHTML += `<div class="col-md-4 d-flex ftco-animate">
@@ -22,12 +23,13 @@
                         </div>
                     </div>
                     <h3 class="heading mb-3"><a href="#">All you want to know about industrial laws</a></h3>
-                    <p>A small river named Duden flows <span class="">Number: ${o}</span> by their place and supplies it with the necessary regelialia.</p>
+                    <p>A small river named Duden flows <span class="">{Number: ${o}}</span> by their place and supplies it with the necessary regelialia.</p>
                     <p><a href="#" class="btn-custom"><span class="ion-ios-arrow-round-forward mr-3"></span>Read more</a></p>
                 </div>
             </div>
         </div> `
         } else if (window.location.pathname === "/articles.html") {
+            
             el.innerHTML += `<div class="case">
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-xl-8 d-flex">
@@ -36,10 +38,10 @@
                 <div class="col-md-6 col-lg-6 col-xl-4 d-flex">
                     <div class="text w-100 pl-md-3">
                         <span class="subheading">Application</span>
-                        <h2><a href="blog-single.html">Build a website in minutes with Adobe Templates</a></h2>
+                        <h2><a href="blog-single.html">Build a website in minutes with Adobe Templates[${o}]</a></h2>
                         <ul class="media-social list-unstyled">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
                             <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
                         </ul>
                         <div class="meta">
@@ -51,8 +53,7 @@
            </div>`  
         }
      })
- };
-content(indexWrapper);
+ })();
 
 
 //  function footer(){
