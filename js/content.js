@@ -1,10 +1,9 @@
  
- let arr = [12,342,34,445,5,6,7,787,8,89,99,9,90,298,6,56,5,5,23,23,5,5,3,4,35,2,24];
+ let arr = [12,342,34,445,5,6,7,787,8,89];
  let el = document.querySelector('div.body-wrapper');
  
-
-
 (()=>{
+    console.log(window.location.pathname);
      arr.map((o)=>{
         if (window.location.pathname === "/index.html") {
             el.innerHTML += `<div class="col-md-4 d-flex ftco-animate">

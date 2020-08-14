@@ -23,6 +23,5 @@ let arrr = [23,45];
 	</div>`;
 	});
 	
-console.log(1997);
 
 })();
