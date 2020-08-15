@@ -3,7 +3,7 @@
  let el = document.querySelector('div.body-wrapper');
     console.log(window.location.pathname);
      arr.map((o)=>{
-        if (window.location.pathname === "/readit-template/index.html"||"/") {
+        if (window.location.pathname == "/readit-template/index.html"||"/") {
             el.innerHTML += `<div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
                 <a href="blog-single.html" class="block-20" style="background-image: url('images/image_9.jpg');">
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div> `
-        } else if (window.location.pathname === "/readit-template/articles.html") {  
+        } else if (window.location.pathname == "/readit-template/articles.html") {  
             el.innerHTML += `<div class="case">
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-xl-8 d-flex">
