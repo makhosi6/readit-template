@@ -1,11 +1,9 @@
- 
+(()=>{
  let arr = [12,342,34,445,5,6,7,787,8,89];
  let el = document.querySelector('div.body-wrapper');
- 
-(()=>{
     console.log(window.location.pathname);
      arr.map((o)=>{
-        if (window.location.pathname === "/index.html") {
+        if (window.location.pathname === "/index.html" || "/readit-template/index.html"||"/") {
             el.innerHTML += `<div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
                 <a href="blog-single.html" class="block-20" style="background-image: url('images/image_9.jpg');">
@@ -27,7 +25,7 @@
                 </div>
             </div>
         </div> `
-        } else if (window.location.pathname === "/articles.html") {
+        } else if (window.location.pathname === "/articles.html"|| "/readit-template/articles.html") {
             
             el.innerHTML += `<div class="case">
             <div class="row">
